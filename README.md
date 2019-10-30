@@ -1,8 +1,10 @@
-# @auth0/nextjs-auth0
+# nextjs-openid-mongodb
 
-Auth0 SDK for signing in to your Next.js applications.
+Auth OpenID SDK for signing in to your Next.js applications.
 
-> Note: This library is currently in an experimental state and support is best effort.
+> Note:
+> - Forked from [@auth0/nextjs-auth0](https://github.com/auth0/nextjs-auth0/)
+> - This library is currently in an experimental state and support is best effort.
 
 [![License](https://img.shields.io/:license-mit-blue.svg?style=flat)](https://opensource.org/licenses/MIT)
 
@@ -22,13 +24,13 @@ Auth0 SDK for signing in to your Next.js applications.
 Using [npm](https://npmjs.org):
 
 ```sh
-npm install @auth0/nextjs-auth0
+npm install nextjs-openid-mongodb
 ```
 
 Using [yarn](https://yarnpkg.com):
 
 ```sh
-yarn add @auth0/nextjs-auth0
+yarn add nextjs-openid-mongodb
 ```
 
 > Note that this package supports the following versions of Node.js: `^10.13.0 || >=12.0.0`
@@ -37,7 +39,7 @@ yarn add @auth0/nextjs-auth0
 
 ### Auth0 Configuration
 
-Create a **Regular Web Application** in the [Auth0 Dashboard](https://manage.auth0.com/). If you're using an existing application you'll want to very that the following settings are configured as follows:
+Create a **Regular Web Application** in the [Auth0 Dashboard](https://manage.auth0.com/). If you're using an existing application you'll want to verify that the following settings are configured as follows:
 
  - **Json Web Token Signature Algorithm**: `RS256`
  - **OIDC Conformant**: `True`
@@ -54,7 +56,7 @@ Take note of the **Client ID**, **Client Secret** and **Domain** of your applica
 And then create an instance of the Auth0 plugin (eg: under `/utils/auth0.js`):
 
 ```js
-import { initAuth0 } from '@auth0/nextjs-auth0';
+import { initAuth0 } from 'nextjs-openid-mongodb';
 
 export default initAuth0({
   domain: '<AUTH0_DOMAIN>',
@@ -229,7 +231,7 @@ It's a common pattern to use Next.js API Routes and proxy them to external APIs.
 In order to get an access_token for an API you'll need to configure the `audience` on the Auth0 plugin and configure it to store the `access_token` in the cookie:
 
 ```js
-import { initAuth0 } from '@auth0/nextjs-auth0';
+import { initAuth0 } from 'nextjs-openid-mongodb';
 
 export default initAuth0({
   domain: '<AUTH0_DOMAIN>'
@@ -364,4 +366,4 @@ Auth0 helps you to easily:
 
 ## License
 
-This project is licensed under the MIT license. See the [LICENSE](https://github.com/auth0/nextjs-auth0/blob/master/LICENSE) file for more info.
+This project is licensed under the MIT license. See the [LICENSE](https://github.com/ggallon/nextjs-openid-mongodb/blob/master/LICENSE) file for more info.
