@@ -1,4 +1,10 @@
-## [v0.6.0](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.5.0) (2019-10-30)
+## [v0.6.1](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.6.1) (2019-11-01)
+
+- Fix version return for telemetry
+- Update dependencies and locked packages versions
+- Fix lint rules
+
+## [v0.6.0](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.6.0) (2019-10-30)
 
 - forked from [@auth0/nextjs-auth0](https://github.com/auth0/nextjs-auth0/)
 - Custum package to nextjs-openid-mongodb
