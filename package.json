@@ -2,29 +2,6 @@
   "name": "nextjs-openid-mongodb",
   "version": "0.6.1",
   "description": "Next.js SDK for signing in with OpenID and mongodb",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "browser": "dist/index.browser.js",
-  "directories": {
-    "test": "tests"
-  },
-  "engines": {
-    "node": "^10.13.0 || >=12.0.0"
-  },
-  "scripts": {
-    "clean": "rimraf dist",
-    "pretty": "prettier --write \"src/**/*.ts\" \"src/*.ts\"",
-    "lint": "eslint --fix --ext .ts ./src",
-    "build": "tsc -p tsconfig.build.json",
-    "test": "jest --coverage",
-    "test:watch": "jest --coverage --watch",
-    "prepublishOnly": "npm test && npm run lint",
-    "prepublish": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ggallon/nextjs-openid-mongodb.git"
-  },
   "keywords": [
     "openid",
     "next.js",
@@ -34,12 +11,46 @@
     "mongodb",
     "zeit"
   ],
-  "author": "Gwenaël ggallon <gwenael.gallon@mac.com>",
-  "license": "MIT",
+  "homepage": "https://github.com/ggallon/nextjs-openid-mongodb#readme",
   "bugs": {
     "url": "https://github.com/ggallon/nextjs-openid-mongodb/issues"
   },
-  "homepage": "https://github.com/ggallon/nextjs-openid-mongodb#readme",
+  "license": "MIT",
+  "author": {
+    "name": "Gwenaël Gallon",
+    "email": "gwenael.gallon@mac.com",
+    "url": "https://github.com/ggallon"
+  },
+  "files": [
+    "dist/**"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "dist/index.browser.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggallon/nextjs-openid-mongodb.git"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "pretty": "prettier --write \"src/**/*.ts\" \"src/*.ts\"",
+    "lint": "eslint '{src,test,examples}/**/*.{ts,tsx}'",
+    "lint:fix": "eslint '{src,test,examples}/**/*.{ts,tsx}' --fix",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watch",
+    "prepublishOnly": "npm test && npm run lint",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "@hapi/iron": "5.1.4",
+    "base64url": "3.0.1",
+    "cookie": "0.4.0",
+    "openid-client": "3.7.4"
+  },
   "devDependencies": {
     "@panva/jose": "1.9.2",
     "@types/cookie": "0.3.3",
@@ -66,32 +77,10 @@
     "ts-jest": "24.1.0",
     "typescript": "3.6.4"
   },
-  "dependencies": {
-    "@hapi/iron": "5.1.4",
-    "base64url": "3.0.1",
-    "cookie": "0.4.0",
-    "openid-client": "3.7.4"
-  },
   "peerDependencies": {
     "next": "^9.0.5"
   },
-  "jest": {
-    "testEnvironment": "node",
-    "rootDir": "./",
-    "moduleFileExtensions": [
-      "ts",
-      "js"
-    ],
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/tests/",
-      "./jest.config.js"
-    ],
-    "coverageReporters": [
-      "lcov",
-      "text",
-      "text-summary"
-    ],
-    "preset": "ts-jest"
+  "engines": {
+    "node": "^10.13.0 || >=12.0.0"
   }
 }
