@@ -129,4 +129,20 @@ describe('withApi login handler', () => {
       + `&state=${state['a0:state']}`
     );
   });
+
+  test('should allow sending custom state to the authorization server', async () => {
+    loginOptions = {
+      authParams: {
+        state: 'custom-state',
+      }
+    };
+    const { statusCode, headers } = await getAsync({
+      url: httpServer.getUrl(),
+      followRedirect: false
+    });
+
+    expect(statusCode).toBe(302);
+    expect(headers.location)
+      .toContain('&state=custom-state');
+  });
 });
