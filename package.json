@@ -49,20 +49,20 @@
     "@hapi/iron": "5.1.4",
     "base64url": "3.0.1",
     "cookie": "0.4.0",
-    "openid-client": "3.7.4"
+    "openid-client": "3.8.1"
   },
   "devDependencies": {
     "@panva/jose": "1.9.2",
     "@types/cookie": "0.3.3",
     "@types/hapi__iron": "5.1.0",
-    "@types/jest": "24.0.21",
+    "@types/jest": "24.0.22",
     "@types/jsonwebtoken": "8.3.5",
-    "@types/node": "12.12.3",
+    "@types/node": "12.12.6",
     "@types/react": "16.9.11",
-    "@types/react-dom": "16.9.3",
+    "@types/react-dom": "16.9.4",
     "@types/request": "2.48.3",
-    "@typescript-eslint/eslint-plugin": "2.6.0",
-    "@typescript-eslint/parser": "2.6.0",
+    "@typescript-eslint/eslint-plugin": "2.6.1",
+    "@typescript-eslint/parser": "2.6.1",
     "eslint": "6.6.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-config-prettier": "6.5.0",
@@ -75,7 +75,7 @@
     "request": "2.88.0",
     "timekeeper": "2.2.0",
     "ts-jest": "24.1.0",
-    "typescript": "3.6.4"
+    "typescript": "3.7.2"
   },
   "peerDependencies": {
     "next": "^9.0.5"
