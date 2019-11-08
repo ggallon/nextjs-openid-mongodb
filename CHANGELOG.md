@@ -1,3 +1,8 @@
+## [v0.6.2](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.6.2) (2019-11-8)
+
+- Enables sending a custom state to the auth server
+- Update packages dependencies
+
 ## [v0.6.1](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.6.1) (2019-11-01)
 
 - Fix version return for telemetry
