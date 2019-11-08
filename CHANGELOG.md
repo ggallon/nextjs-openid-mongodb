@@ -1,3 +1,7 @@
+## [v0.6.3](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.6.3) (2019-11-8)
+
+- Fix test login handler
+
 ## [v0.6.2](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.6.2) (2019-11-8)
 
 - Enables sending a custom state to the auth server
