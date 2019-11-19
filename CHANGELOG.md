@@ -1,14 +1,12 @@
-## [v0.7.1](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.7.1) (2019-11-19)
+## [v0.9.0](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.9.0) (2019-11-19)
 
-- Fix package.json breaking npm publish
-
-## [v0.7.0](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.7.0) (2019-11-19)
-
+- Fix typescript build issue introduce to v0.6.1
 - Adds the domain option in cookies
 - Update dependencies and devdependencies
 - Fix missing LoginOptions to ISignInWithAuth0
 - Update Git issue templates (feature_request, bug_report) and pull_request_template
 - Update CODE-OF-CONDUCT
+- Clean code
 
 ## [v0.6.3](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.6.3) (2019-11-8)
 

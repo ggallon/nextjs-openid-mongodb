@@ -1,3 +1,1 @@
-import { version } from '../package.json';
-
-export default version;
+export default '0.9.0';
