@@ -1,3 +1,7 @@
+## [v0.7.1](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.7.1) (2019-11-19)
+
+- Fix package.json breaking npm publish
+
 ## [v0.7.0](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.7.0) (2019-11-19)
 
 - Adds the domain option in cookies

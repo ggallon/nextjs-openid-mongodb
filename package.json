@@ -1,6 +1,6 @@
 {
   "name": "nextjs-openid-mongodb",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Next.js SDK for signing in with OpenID and mongodb",
   "keywords": [
     "openid",
@@ -21,9 +21,6 @@
     "email": "gwenael.gallon@mac.com",
     "url": "https://github.com/ggallon"
   },
-  "files": [
-    "dist/**"
-  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "browser": "dist/index.browser.js",
