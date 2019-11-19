@@ -1,3 +1,11 @@
+## [v0.7.0](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.7.0) (2019-11-19)
+
+- Adds the domain option in cookies
+- Update dependencies and devdependencies
+- Fix missing LoginOptions to ISignInWithAuth0
+- Update Git issue templates (feature_request, bug_report) and pull_request_template
+- Update CODE-OF-CONDUCT
+
 ## [v0.6.3](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.6.3) (2019-11-8)
 
 - Fix test login handler
