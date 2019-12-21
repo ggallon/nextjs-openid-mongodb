@@ -31,6 +31,16 @@
     "max-len": ["error", 120],
     "comma-dangle": ["error", "never"],
     "no-trailing-spaces": "error",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
     "import/no-extraneous-dependencies": [
       "error",
       {
