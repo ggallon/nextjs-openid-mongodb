@@ -1,4 +1,4 @@
-import jose from '@panva/jose';
+import jose from 'jose';
 import request from 'request';
 import { parse } from 'cookie';
 import { promisify } from 'util';
