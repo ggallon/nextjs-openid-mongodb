@@ -1,3 +1,8 @@
+## [v0.9.1](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.9.1) (2019-12-21)
+- Added SameSite support
+- Update dependencies and devdependencies
+- Update README
+
 ## [v0.9.0](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.9.0) (2019-11-19)
 
 - Fix typescript build issue introduce to v0.6.1
