@@ -10,6 +10,12 @@ export interface ICookieSessionStoreSettings {
   cookieName?: string;
 
   /**
+   * SameSite support for the session cookie which helps mitigate CSRF attacks.
+   * Defaults to "Lax"
+   */
+  cookieSameSite?: boolean | 'lax' | 'strict' | 'none' | undefined;
+
+  /**
    * Cookie lifetime in seconds.
    * After this time has passed, the user will be redirect to Auth0 again.
    * Defaults to 8 hours.
@@ -53,6 +59,8 @@ export default class CookieSessionStoreSettings {
 
   readonly cookieName: string;
 
+  readonly cookieSameSite: boolean | 'lax' | 'strict' | 'none' | undefined;
+
   readonly cookieLifetime: number;
 
   readonly cookiePath: string;
@@ -78,6 +86,11 @@ export default class CookieSessionStoreSettings {
     this.cookieName = settings.cookieName || 'a0:session';
     if (!this.cookieName || !this.cookieName.length) {
       throw new Error('The cookieName setting is empty or null');
+    }
+
+    this.cookieSameSite = settings.cookieSameSite;
+    if (this.cookieSameSite === undefined) {
+      this.cookieSameSite = 'lax';
     }
 
     this.cookieLifetime = settings.cookieLifetime || 60 * 60 * 8;

@@ -31,6 +31,11 @@ interface ICookie {
    * The domain of the cookie
    */
   domain?: string;
+
+  /**
+   * SameSite configuration for the session cookie.
+   */
+  sameSite?: boolean | 'lax' | 'strict' | 'none' | undefined;
 }
 
 /**
@@ -82,7 +87,8 @@ function serializeCookie(cookie: ICookie, secure: boolean): string {
     httpOnly: true,
     secure,
     path: cookie.path,
-    domain: cookie.domain
+    domain: cookie.domain,
+    sameSite: cookie.sameSite
   });
 }
 

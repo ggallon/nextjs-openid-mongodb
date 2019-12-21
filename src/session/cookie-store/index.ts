@@ -40,7 +40,7 @@ export default class CookieSessionStore implements ISessionStore {
    */
   async save(req: IncomingMessage, res: ServerResponse, session: ISession): Promise<void> {
     const {
-      cookieSecret, cookieName, cookiePath, cookieLifetime, cookieDomain
+      cookieSecret, cookieName, cookiePath, cookieLifetime, cookieDomain, cookieSameSite
     } = this.settings;
 
     const {
@@ -66,7 +66,8 @@ export default class CookieSessionStore implements ISessionStore {
       value: encryptedSession,
       path: cookiePath,
       maxAge: cookieLifetime,
-      domain: cookieDomain
+      domain: cookieDomain,
+      sameSite: cookieSameSite
     });
   }
 }
