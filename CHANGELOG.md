@@ -1,3 +1,8 @@
+## [v0.9.2](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.9.2) (2020-01-08)
+- Updating settings types
+- Added validation for settings in the Node.js instance
+- Update packages devDependencies
+
 ## [v0.9.1](https://github.com/ggallon/nextjs-openid-mongodb/tree/v0.9.1) (2019-12-21)
 - Added SameSite support
 - Update dependencies and devdependencies
